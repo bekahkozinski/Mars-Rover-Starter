@@ -62,7 +62,7 @@ describe("Rover class", function () {
   test("responds with a false completed value when attempting to move in LOW_POWER mode", function () {
     let commandTest = [
       new Command("MODE_CHANGE", "LOW_POWER"),
-      new Command("MOVE", 12000)
+      new Command("MOVE", 12000),
     ];
     let messageTest = new Message("name", commandTest);
     let roverTest = new Rover(4500);
